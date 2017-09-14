@@ -16,15 +16,18 @@ void loop() {
   int val;
   val = analogRead(0); //connect sensor to Analog 0
    Serial.println(val);
-   delay(1000);
-  if (val < 300){
-               digitalWrite(LED_BUILTIN, HIGH);   
-                delay(1000);                      
+   
+  if (val < 300)
+  {
+         digitalWrite(LED_BUILTIN, HIGH);   
+         delay(1000);                      
                                       
-  
- }
-   else{
-    digitalWrite(LED_BUILTIN, LOW);      
-   }
+  }
+  else
+  {
+        digitalWrite(LED_BUILTIN, LOW);      
+        delay(1000);
+  }
+   
 }
 
